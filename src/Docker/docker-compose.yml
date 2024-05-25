@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  pdiproject.api:
+    image: ${DOCKER_REGISTRY-}pdiprojectapi
+    build:
+      context: ../src/PdiProject.Api
+      dockerfile: Dockerfile
